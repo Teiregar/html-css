@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid red;
+}
+
+
+header,
+footer {
+    background-color: #6C63FF;
+}
+
+header {
+    height: 80px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.my-btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 44px;
+    color: #2F2E41;
+    text-transform: uppercase;
+    margin: 100px 0 70px;
+    text-align: center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 2px solid #E7E7E7;
+    border-radius: 5px;
+    width: 330px;
+    padding: 46px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    margin: 40px 0 36px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 9px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a img {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 46px 0 50px;
+    }
+    .main-title{
+        margin-bottom: 46px;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section {
+        padding-top: 44px;
+    }
+    .main-title {
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+}
